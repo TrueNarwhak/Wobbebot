@@ -20,7 +20,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.find("!hello") != -1: # simple hello command, just for helping
+    if message.content.find("!hello") != -1: # simple hello command, just for testing
         await message.channel.send(":wave:")
     elif message.content.startswith("!info"):
         embedVar = discord.Embed(title="Hello!", description="I'm Wobbebot", color=0x00ff00) # the main help command

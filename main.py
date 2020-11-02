@@ -21,7 +21,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.find("!hello") != -1: # simple hello command, just for testing
-        await message.channel.send(":wave:")
+        await message.channel.send("poopy")
     elif message.content.startswith("!info"):
         embedVar = discord.Embed(title="Hello!", description="I'm Wobbebot", color=0x00ff00) # the main help command
         embedVar.add_field(name="What do I do?", value="I am a bot for a discord server based of the Doc Assets extention (which you can get here: https://chrome.google.com/webstore/detail/doctorpus-assets/cmlbeiacmcbdiepcenjmhmkclmffbgbd?hl=en)", inline=False)
